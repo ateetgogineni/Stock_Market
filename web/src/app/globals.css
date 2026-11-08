@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/*
+ * Soft-neon dark theme. Muted neon tones are used for interface accents, status and glows,
+ * always next to a text label. Chart series use the validated in-band set
+ * (--series-*), which passes the colour-blind separation and lightness checks on
+ * the dark chart surface.
+ */
+:root {
+  color-scheme: dark;
+  --bg: #07070f;
+  --panel: #0d0e1c;
+  --panel-2: #15172e;
+  --border: #252a52;
+  --text: #e6e8f2;
+  --muted: #9ba1c4;
+  --faint: #6c72a6;
+
+  --neon-cyan: #5ec8db;
+  --neon-green: #5fd39a;
+  --neon-red: #e8667f;
+  --neon-yellow: #e3c25a;
+  --neon-purple: #a98ae6;
+  --neon-blue: #6f8fe0;
+
+  --accent: var(--neon-cyan);
+  --pos: var(--neon-green);
+  --neg: var(--neon-red);
+  --warn: var(--neon-yellow);
+  --pos-bg: rgba(95, 211, 154, 0.1);
+  --neg-bg: rgba(232, 102, 127, 0.1);
+  --warn-bg: rgba(227, 194, 90, 0.09);
+  --neutral-bg: rgba(166, 172, 214, 0.1);
+  --purple-bg: rgba(169, 138, 230, 0.1);
+  --cyan-bg: rgba(94, 200, 219, 0.09);
+
+  --chart-surface: #0b0b16;
+  --chart-grid: #171a33;
+  --series-1: #3b82f6;
+  --series-2: #ea580c;
+  --series-3: #a855f7;
+  --series-4: #0891b2;
+  --series-5: #16a34a;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--border);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-pos: var(--pos);
+  --color-neg: var(--neg);
+  --color-warn: var(--warn);
+  --color-purple: var(--neon-purple);
+  --color-cyan: var(--neon-cyan);
+  --color-pos-bg: var(--pos-bg);
+  --color-neg-bg: var(--neg-bg);
+  --color-warn-bg: var(--warn-bg);
+  --color-neutral-bg: var(--neutral-bg);
+  --color-purple-bg: var(--purple-bg);
+  --color-cyan-bg: var(--cyan-bg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(169, 138, 230, 0.06), transparent 60%),
+    radial-gradient(800px 500px at 100% 0%, rgba(94, 200, 219, 0.05), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-feature-settings: "tnum" 1;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(21, 23, 46, 0.85), rgba(13, 14, 28, 0.92));
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Soft glows: a hint of light, not a halo. */
+.glow-pos { box-shadow: 0 0 8px rgba(95, 211, 154, 0.15); }
+.glow-neg { box-shadow: 0 0 8px rgba(232, 102, 127, 0.16); }
+.glow-warn { box-shadow: 0 0 8px rgba(227, 194, 90, 0.13); }
+.glow-cyan { box-shadow: 0 0 8px rgba(94, 200, 219, 0.15); }
+.glow-purple { box-shadow: 0 0 8px rgba(169, 138, 230, 0.16); }
+.text-glow-pos { text-shadow: 0 0 10px rgba(95, 211, 154, 0.2); }
+.text-glow-neg { text-shadow: 0 0 10px rgba(232, 102, 127, 0.2); }
+.text-glow-warn { text-shadow: 0 0 10px rgba(227, 194, 90, 0.18); }
+.text-glow-cyan { text-shadow: 0 0 10px rgba(94, 200, 219, 0.18); }
+.text-glow-purple { text-shadow: 0 0 10px rgba(169, 138, 230, 0.2); }
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pulse-dot { animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+}

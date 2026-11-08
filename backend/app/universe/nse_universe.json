@@ -1,0 +1,728 @@
+{
+  "universe_id": "nse-core-dev-v1",
+  "description": "Curated core universe of large NSE-listed cash equities.",
+  "source": "https://archives.nseindia.com/content/equities/EQUITY_L.csv",
+  "source_file_date": "2026-11-07",
+  "instruments": [
+    {
+      "instrument_id": "IN:INE002A01018",
+      "isin": "INE002A01018",
+      "name": "Reliance Industries Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-11-29",
+      "face_value": "10",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "RELIANCE",
+          "series": "EQ",
+          "provider_symbol": "RELIANCE.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "RELIANCE",
+          "scrip_code": null,
+          "provider_symbol": "RELIANCE.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE467B01029",
+      "isin": "INE467B01029",
+      "name": "Tata Consultancy Services Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2004-08-25",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "TCS",
+          "series": "EQ",
+          "provider_symbol": "TCS.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "TCS",
+          "scrip_code": null,
+          "provider_symbol": "TCS.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE009A01021",
+      "isin": "INE009A01021",
+      "name": "Infosys Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-02-08",
+      "face_value": "5",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "INFY",
+          "series": "EQ",
+          "provider_symbol": "INFY.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "INFY",
+          "scrip_code": null,
+          "provider_symbol": "INFY.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE040A01034",
+      "isin": "INE040A01034",
+      "name": "HDFC Bank Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-11-08",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "HDFCBANK",
+          "series": "EQ",
+          "provider_symbol": "HDFCBANK.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "HDFCBANK",
+          "scrip_code": null,
+          "provider_symbol": "HDFCBANK.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE090A01021",
+      "isin": "INE090A01021",
+      "name": "ICICI Bank Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1997-09-17",
+      "face_value": "2",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "ICICIBANK",
+          "series": "EQ",
+          "provider_symbol": "ICICIBANK.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "ICICIBANK",
+          "scrip_code": null,
+          "provider_symbol": "ICICIBANK.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE154A01025",
+      "isin": "INE154A01025",
+      "name": "ITC Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-08-23",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "ITC",
+          "series": "EQ",
+          "provider_symbol": "ITC.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "ITC",
+          "scrip_code": null,
+          "provider_symbol": "ITC.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE062A01020",
+      "isin": "INE062A01020",
+      "name": "State Bank of India",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-03-01",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "SBIN",
+          "series": "EQ",
+          "provider_symbol": "SBIN.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "SBIN",
+          "scrip_code": null,
+          "provider_symbol": "SBIN.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE397D01024",
+      "isin": "INE397D01024",
+      "name": "Bharti Airtel Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2002-02-15",
+      "face_value": "5",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "BHARTIARTL",
+          "series": "EQ",
+          "provider_symbol": "BHARTIARTL.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "BHARTIARTL",
+          "scrip_code": null,
+          "provider_symbol": "BHARTIARTL.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE030A01027",
+      "isin": "INE030A01027",
+      "name": "Hindustan Unilever Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-07-06",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "HINDUNILVR",
+          "series": "EQ",
+          "provider_symbol": "HINDUNILVR.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "HINDUNILVR",
+          "scrip_code": null,
+          "provider_symbol": "HINDUNILVR.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE018A01030",
+      "isin": "INE018A01030",
+      "name": "Larsen & Toubro Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2004-06-23",
+      "face_value": "2",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "LT",
+          "series": "EQ",
+          "provider_symbol": "LT.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "LT",
+          "scrip_code": null,
+          "provider_symbol": "LT.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE238A01034",
+      "isin": "INE238A01034",
+      "name": "Axis Bank Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1998-11-16",
+      "face_value": "2",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "AXISBANK",
+          "series": "EQ",
+          "provider_symbol": "AXISBANK.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "AXISBANK",
+          "scrip_code": null,
+          "provider_symbol": "AXISBANK.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE021A01026",
+      "isin": "INE021A01026",
+      "name": "Asian Paints Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-05-31",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "ASIANPAINT",
+          "series": "EQ",
+          "provider_symbol": "ASIANPAINT.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "ASIANPAINT",
+          "scrip_code": null,
+          "provider_symbol": "ASIANPAINT.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE585B01010",
+      "isin": "INE585B01010",
+      "name": "Maruti Suzuki India Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2003-07-09",
+      "face_value": "5",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "MARUTI",
+          "series": "EQ",
+          "provider_symbol": "MARUTI.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "MARUTI",
+          "scrip_code": null,
+          "provider_symbol": "MARUTI.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE044A01036",
+      "isin": "INE044A01036",
+      "name": "Sun Pharmaceutical Industries Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-02-08",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "SUNPHARMA",
+          "series": "EQ",
+          "provider_symbol": "SUNPHARMA.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "SUNPHARMA",
+          "scrip_code": null,
+          "provider_symbol": "SUNPHARMA.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE075A01022",
+      "isin": "INE075A01022",
+      "name": "Wipro Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-11-08",
+      "face_value": "2",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "WIPRO",
+          "series": "EQ",
+          "provider_symbol": "WIPRO.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "WIPRO",
+          "scrip_code": null,
+          "provider_symbol": "WIPRO.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE860A01027",
+      "isin": "INE860A01027",
+      "name": "HCL Technologies Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2000-01-06",
+      "face_value": "2",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "HCLTECH",
+          "series": "EQ",
+          "provider_symbol": "HCLTECH.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "HCLTECH",
+          "scrip_code": null,
+          "provider_symbol": "HCLTECH.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE081A01020",
+      "isin": "INE081A01020",
+      "name": "Tata Steel Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1998-11-18",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "TATASTEEL",
+          "series": "EQ",
+          "provider_symbol": "TATASTEEL.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "TATASTEEL",
+          "scrip_code": null,
+          "provider_symbol": "TATASTEEL.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE237A01036",
+      "isin": "INE237A01036",
+      "name": "Kotak Mahindra Bank Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "1995-12-20",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "KOTAKBANK",
+          "series": "EQ",
+          "provider_symbol": "KOTAKBANK.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "KOTAKBANK",
+          "scrip_code": null,
+          "provider_symbol": "KOTAKBANK.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE296A01032",
+      "isin": "INE296A01032",
+      "name": "Bajaj Finance Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2003-04-01",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "BAJFINANCE",
+          "series": "EQ",
+          "provider_symbol": "BAJFINANCE.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "BAJFINANCE",
+          "scrip_code": null,
+          "provider_symbol": "BAJFINANCE.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE733E01010",
+      "isin": "INE733E01010",
+      "name": "NTPC Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2004-11-05",
+      "face_value": "10",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "NTPC",
+          "series": "EQ",
+          "provider_symbol": "NTPC.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "NTPC",
+          "scrip_code": null,
+          "provider_symbol": "NTPC.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE280A01028",
+      "isin": "INE280A01028",
+      "name": "Titan Company Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2004-09-24",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "TITAN",
+          "series": "EQ",
+          "provider_symbol": "TITAN.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "TITAN",
+          "scrip_code": null,
+          "provider_symbol": "TITAN.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE481G01011",
+      "isin": "INE481G01011",
+      "name": "UltraTech Cement Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2004-08-24",
+      "face_value": "10",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "ULTRACEMCO",
+          "series": "EQ",
+          "provider_symbol": "ULTRACEMCO.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "ULTRACEMCO",
+          "scrip_code": null,
+          "provider_symbol": "ULTRACEMCO.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE752E01010",
+      "isin": "INE752E01010",
+      "name": "Power Grid Corporation of India Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2007-10-05",
+      "face_value": "10",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "POWERGRID",
+          "series": "EQ",
+          "provider_symbol": "POWERGRID.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "POWERGRID",
+          "scrip_code": null,
+          "provider_symbol": "POWERGRID.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    },
+    {
+      "instrument_id": "IN:INE239A01024",
+      "isin": "INE239A01024",
+      "name": "Nestle India Limited",
+      "security_type": "equity",
+      "country": "IN",
+      "currency": "INR",
+      "nse_listing_date": "2023-08-01",
+      "face_value": "1",
+      "listings": [
+        {
+          "exchange": "NSE",
+          "symbol": "NESTLEIND",
+          "series": "EQ",
+          "provider_symbol": "NESTLEIND.NS",
+          "is_primary": true,
+          "identifier_verified": true,
+          "verification_source": "NSE EQUITY_L.csv"
+        },
+        {
+          "exchange": "BSE",
+          "symbol": "NESTLEIND",
+          "scrip_code": null,
+          "provider_symbol": "NESTLEIND.BO",
+          "is_primary": false,
+          "identifier_verified": false,
+          "verification_source": "Not verified: BSE scrip master not loaded. Listing inferred from the dev provider symbol."
+        }
+      ]
+    }
+  ]
+}

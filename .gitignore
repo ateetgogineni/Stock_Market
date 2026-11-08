@@ -1,0 +1,22 @@
+# secrets: API keys live in .env (never commit). .env.example is the blank template.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.claude/settings.local.json
+
+.DS_Store
+
+# backend
+backend/.venv/
+backend/data/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+
+# web
+web/node_modules/
+web/.next/
+web/next-env.d.ts
+*.tsbuildinfo

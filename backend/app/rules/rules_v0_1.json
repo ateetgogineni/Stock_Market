@@ -1,0 +1,131 @@
+{
+  "version": "rules-v0.1-draft",
+  "validation_status": "draft_unvalidated",
+  "validation_note": "Weights and thresholds are initial product defaults. They have not been backtested or approved (plan sections 5.3 and 16, Phase 4). Treat ratings as development output only.",
+  "scoring_method": "Each component is mapped linearly from its 'bad' level (-1) to its 'good' level (+1) and clipped to [-1, 1]. A sub-score is the mean of its available components and needs at least half of them. The composite is the weight-normalised mean of available sub-scores.",
+  "thresholds": {
+    "buy": 0.30,
+    "sell": -0.30,
+    "min_agreement": 0.60,
+    "min_coverage": 0.70,
+    "neutral_band": 0.10,
+    "news_min_items": 3
+  },
+  "horizons": {
+    "short": {
+      "label": "Short term",
+      "window": "1-20 trading sessions",
+      "sessions": 20,
+      "enabled": false,
+      "abstain_reason": "No validated short-horizon forecasting model is approved yet (plan sections 4.10 and 16, Phase 4). Technical signals alone are not a recommendation."
+    },
+    "medium": {
+      "label": "Medium term",
+      "window": "3-6 months (63-126 trading sessions)",
+      "sessions": 126,
+      "enabled": true,
+      "requires_gates_for": "medium",
+      "weights": {
+        "technical": 0.25,
+        "momentum": 0.25,
+        "earnings_momentum": 0.15,
+        "fundamental_quality": 0.10,
+        "valuation": 0.05,
+        "news_events": 0.05,
+        "risk": 0.15
+      },
+      "required": ["technical", "momentum"]
+    },
+    "long": {
+      "label": "Long term",
+      "window": "6-24 months",
+      "sessions": 504,
+      "enabled": true,
+      "requires_gates_for": "long",
+      "weights": {
+        "fundamental_quality": 0.35,
+        "valuation": 0.20,
+        "earnings_momentum": 0.10,
+        "momentum": 0.10,
+        "technical": 0.05,
+        "risk": 0.20
+      },
+      "required": ["fundamental_quality"]
+    }
+  },
+  "sub_scores": {
+    "fundamental_quality": {
+      "label": "Fundamental quality",
+      "components": {
+        "roe": {"bad": 0.08, "good": 0.20},
+        "net_margin": {"bad": 0.03, "good": 0.15},
+        "revenue_growth": {"bad": 0.0, "good": 0.15},
+        "debt_to_equity": {"bad": 2.0, "good": 0.3},
+        "interest_coverage": {"bad": 2.0, "good": 8.0},
+        "fcf_margin": {"bad": 0.0, "good": 0.10},
+        "cash_conversion": {"bad": 0.6, "good": 1.1}
+      }
+    },
+    "valuation": {
+      "label": "Valuation",
+      "note": "Absolute P/E and P/B bands. No sector or own-history baseline yet, so this sub-score is crude.",
+      "components": {
+        "pe": {"bad": 45.0, "good": 15.0},
+        "pb": {"bad": 8.0, "good": 1.5}
+      }
+    },
+    "technical": {
+      "label": "Technical condition",
+      "components": {
+        "price_vs_sma200": {"bad": -0.10, "good": 0.10},
+        "sma50_vs_sma200": {"bad": -0.05, "good": 0.05},
+        "price_vs_sma50": {"bad": -0.06, "good": 0.06},
+        "macd_hist_pct": {"bad": -0.01, "good": 0.01}
+      }
+    },
+    "momentum": {
+      "label": "Price momentum vs NIFTY 50",
+      "components": {
+        "rel_return_3m": {"bad": -0.10, "good": 0.10},
+        "rel_return_6m": {"bad": -0.15, "good": 0.15},
+        "momentum_12_1": {"bad": -0.10, "good": 0.25}
+      }
+    },
+    "earnings_momentum": {
+      "label": "Earnings and business momentum",
+      "components": {
+        "q_revenue_yoy": {"bad": -0.05, "good": 0.15},
+        "q_net_income_yoy": {"bad": -0.10, "good": 0.20}
+      }
+    },
+    "risk": {
+      "label": "Financial and market risk (higher is lower risk)",
+      "components": {
+        "volatility_1y": {"bad": 0.50, "good": 0.20},
+        "max_drawdown_1y": {"bad": -0.40, "good": -0.10},
+        "beta_1y": {"bad": 1.6, "good": 0.8},
+        "median_traded_value_cr": {"bad": 5.0, "good": 100.0}
+      }
+    },
+    "news_events": {
+      "label": "News and event tone (headline classification)",
+      "note": "Based on AI classification of headlines only. Articles are not retrieved or verified.",
+      "components": {
+        "news_tone": {"bad": -0.5, "good": 0.5}
+      }
+    }
+  },
+  "sector_overrides": {
+    "Financial Services": {
+      "exclude_components": ["debt_to_equity", "interest_coverage", "fcf_margin", "cash_conversion"],
+      "note": "Leverage, interest-coverage and cash-flow ratios are not meaningful for banks and NBFCs. Bank-specific metrics (NIM, GNPA, CASA, capital adequacy) are not available from the dev provider."
+    }
+  },
+  "invalidation": {
+    "medium_support_window": 60
+  },
+  "prediction_evaluation": {
+    "hold_band": 0.05,
+    "note": "BUY is a hit when the stock beats NIFTY 50 over the horizon, SELL when it lags, HOLD when the excess return stays within +/- hold_band."
+  }
+}

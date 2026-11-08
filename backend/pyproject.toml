@@ -1,0 +1,25 @@
+[project]
+name = "stock-research-backend"
+version = "0.1.0"
+description = "Evidence-first equity research API: vertical slice for NSE/BSE (plan section 19)"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.6,<3",
+    "google-genai>=3.0,<4",
+    "fastapi>=0.162",
+    "uvicorn[standard]>=0.54",
+    "pydantic>=2.14",
+    "pydantic-settings>=2.16",
+    "sqlalchemy>=2.1",
+    "pandas>=3.1",
+    "numpy>=2.5",
+    "yfinance>=1.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9.2", "httpx>=0.28"]
+# Third-party pricing library used only by tests as an independent cross-check.
+crosscheck = ["quantsbin>=1.0.3", "scipy", "matplotlib"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
